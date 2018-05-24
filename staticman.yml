@@ -3,6 +3,7 @@ requiredFields: ["name", "message", "post_id"]
 commitMessage: Staticman
 format: json
 moderation: false
+branch: master
 path: "{fields.post_id}"
 filename: "{@date:YYYY-mm-DD}-{@id}"
 generatedFields:
