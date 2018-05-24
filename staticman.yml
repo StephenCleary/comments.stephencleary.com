@@ -1,0 +1,10 @@
+allowedFields: ["name", "message", "post_id"]
+requiredFields: ["name", "message", "post_id"]
+commitMessage: Staticman
+format: json
+moderation: false
+path: "{fields.post_id}"
+filename: "{@date:YYYY-mm-DD}-{@id}"
+generatedFields:
+  date:
+    type: date
