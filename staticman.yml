@@ -1,10 +1,10 @@
 allowedFields: ["name", "message", "post_id"]
 requiredFields: ["name", "message", "post_id"]
-commitMessage: Staticman
+commitMessage: "(Staticman) {fields.name}: {fields.message}"
 format: json
 moderation: false
 branch: master
-path: "{fields.post_id}"
+path: "docs/{fields.post_id}"
 filename: "{@date:YYYY-mm-DD}-{@id}"
 generatedFields:
   date:
