@@ -1,10 +1,10 @@
-allowedFields: ["name", "message", "post_id"]
-requiredFields: ["name", "message", "post_id"]
+allowedFields: ["name", "message", "post_id", "reply_to"]
+requiredFields: ["name", "message", "post_id", "reply_to"]
 commitMessage: "(Staticman) {fields.name}: {fields.message}"
 format: json
 moderation: false
 branch: master
-path: "docs/{fields.post_id}"
+path: "raw/{fields.post_id}"
 filename: "{@date:YYYY-mm-DD}-{@id}"
 generatedFields:
   date:
