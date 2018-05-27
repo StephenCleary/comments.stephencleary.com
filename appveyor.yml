@@ -7,10 +7,9 @@ build_script:
   - node index.js
 on_success:
   - git config --global credential.helper store
-  - echo "https://$access_token:x-oauth-basic@github.com" > "$HOME\.git-credentials"
+  - echo "https://$access_token:x-oauth-basic@github.com" > "$HOME/.git-credentials"
   - git config --global user.email "appveyor@example.com"
   - git config --global user.name "AppVeyor"
   - git add --all .
   - git commit -m "AppVeyor"
   - git push
-  
