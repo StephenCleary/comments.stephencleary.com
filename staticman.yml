@@ -9,3 +9,7 @@ filename: "{@date:YYYY-mm-DD}-{@id}"
 generatedFields:
   date:
     type: date
+reCaptcha:
+  enabled: true
+  siteKey: "6LfSaV8UAAAAAEFq-7HeUDiSQCkCtLtO_yc_SOi_"
+  secret: "m+3RnHyrnk8L/SgOmrOjOwD92MLGNdbJvHUm7Ml6EyrIKOWGNffdxqKK9AtKcInmiUGaqMrM6W6jInER4Jy+gn/rf4Hai0TmhaxhukqLibAUl1UWhWUaZK1nn/yecE0y9wXOW8JaHtxODjVei0+bNgHl5JITjL/qaNszf+OCTEw="
