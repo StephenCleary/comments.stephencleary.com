@@ -3,7 +3,7 @@ environment:
   access_token:
     secure: RvbBgngx7HEQ8X2qnomFRc0NOZ7bgpW3tYjv/mAQRsXciazeG9JU5Pw4dMICEwar
 only_commits:
-  message: /$\(Staticman\)/
+  message: /^\(Staticman\)/
 build_script:
   - git checkout master
   - node index.js
