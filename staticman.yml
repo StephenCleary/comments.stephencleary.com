@@ -1,5 +1,5 @@
 allowedFields: ["authorName", "authorEmailEncrypted", "authorEmailMD5", "authorUri", "message", "postId", "replyTo"]
-requiredFields: ["authorName", "message", "postId"]
+requiredFields: ["message", "postId"]
 commitMessage: "(Staticman) {fields.authorName}: {fields.message}"
 format: json
 moderation: false
