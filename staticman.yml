@@ -1,6 +1,6 @@
 allowedFields: ["authorName", "authorEmailEncrypted", "authorEmailMD5", "authorUri", "message", "postId", "postUri", "replyTo"]
 requiredFields: ["message", "postId", "postUri"]
-commitMessage: "(Staticman) {fields.authorName}: {fields.message}\n\n{fields.postUri}"
+commitMessage: "(Staticman) {fields.authorName}: {fields.message}\n\n{fields.postUri}#comment-{@id}"
 format: json
 moderation: false
 branch: master
