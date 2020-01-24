@@ -7,4 +7,6 @@ install:
 build_script:
   - npm run build
 on_success:
+  - git config --global user.email "appveyor@example.com"	
+  - git config --global user.name "AppVeyor"
   - npm run deploy
