@@ -1,0 +1,21 @@
+{
+  "name": "comments.stephencleary.com",
+  "version": "1.0.0",
+  "description": "Comments for stephencleary.com",
+  "scripts": {
+    "build": "node ./index.js",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StephenCleary/comments.stephencleary.com.git"
+  },
+  "author": "Stephen Cleary",
+  "bugs": {
+    "url": "https://github.com/StephenCleary/comments.stephencleary.com/issues"
+  },
+  "homepage": "https://stephencleary.com/",
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}

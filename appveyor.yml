@@ -1,17 +1,8 @@
 image: ubuntu
-environment:
-  access_token:
-    secure: RvbBgngx7HEQ8X2qnomFRc0NOZ7bgpW3tYjv/mAQRsXciazeG9JU5Pw4dMICEwar
-skip_commits:
-  author: AppVeyor
+branches:
+  only:
+    - master
 build_script:
-  - git checkout master
-  - node index.js
+  - npm run build
 on_success:
-  - git config --global credential.helper store
-  - echo "https://$access_token:x-oauth-basic@github.com" > "$HOME/.git-credentials"
-  - git config --global user.email "appveyor@example.com"
-  - git config --global user.name "AppVeyor"
-  - git add --all .
-  - git commit -m "AppVeyor"
-  - git push
+  - npm run deploy
