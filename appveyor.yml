@@ -2,6 +2,8 @@ image: ubuntu
 branches:
   only:
     - master
+install:
+  - npm install
 build_script:
   - npm run build
 on_success:
