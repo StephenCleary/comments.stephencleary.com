@@ -1,4 +1,7 @@
 image: ubuntu
+environment:
+  access_token:
+    secure: RvbBgngx7HEQ8X2qnomFRc0NOZ7bgpW3tYjv/mAQRsXciazeG9JU5Pw4dMICEwar
 branches:
   only:
     - master
@@ -7,6 +10,8 @@ install:
 build_script:
   - npm run build
 on_success:
+  - git config --global credential.helper store
+  - echo "https://$access_token:x-oauth-basic@github.com" > "$HOME/.git-credentials"
   - git config --global user.email "appveyor@example.com"	
   - git config --global user.name "AppVeyor"
   - npm run deploy
