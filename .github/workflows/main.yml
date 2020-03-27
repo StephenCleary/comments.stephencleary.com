@@ -32,4 +32,4 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Notify
-      run: echo ${{ github.event }}
+      run: echo ${{ toJson(github.event) }}
